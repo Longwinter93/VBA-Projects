@@ -1,6 +1,6 @@
 Public Sub CorrectFilter()
     Dim sh As Worksheet
-    Set sh = ThisWorkbook.Sheets("Overview")
+    Set sh = ThisWorkbook.Sheets(2)
     sh.AutoFilterMode = False
     sh.Range("C7:AW7").AutoFilter Field:=7, Criteria1:="Name"
 
