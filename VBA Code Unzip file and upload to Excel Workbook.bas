@@ -1,7 +1,7 @@
 Attribute VB_Name = "Module2"
 Public Sub Clear()
     
-    'clear all data from BC Download
+    'clear all data from Worksheet
     ThisWorkbook.Worksheets(3).Range("N8:XFD1048576").Clear
 
 End Sub
@@ -23,7 +23,7 @@ Sub UnzipAndUploadcsvfile()
         Exit Sub
     Else
         'Destination folder
-        DefPath = Application.ActiveWorkbook.Path    ' The original path of your Analysis File
+        DefPath = Application.ActiveWorkbook.Path    ' The original path of your  File
         If Right(DefPath, 1) <> "\" Then
             DefPath = DefPath & "\"
         End If
@@ -35,7 +35,7 @@ Sub UnzipAndUploadcsvfile()
         '
         '
 
-        'Extract the file into the file where your Analysis File is
+        'Extract the file into the file where your  File is
         Set oApp = CreateObject("Shell.Application")
         oApp.Namespace(FileNameFolder).CopyHere oApp.Namespace(Fname).items
 
