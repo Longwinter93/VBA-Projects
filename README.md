@@ -15,5 +15,4 @@ We are able to filter information based on criterion provided that this criterio
 
 ## 3. ImportDataFromExcelToTextFile 
 
-We are able to create import data from Excel to Text File with selected cells.
-
+We are able to create import data from Excel to Text File with selected cells. 
